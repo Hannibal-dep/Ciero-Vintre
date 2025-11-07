@@ -1,126 +1,100 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Protocolo Ciero Ventre</title>
+  <title>Protocolo Ciero Vientre</title>
+  <meta name="description" content="Transforma tu abdomen y tu vida con el Protocolo Ciero Vientre. Un método 100% natural para reducir grasa abdominal, mejorar tu salud y recuperar tu autoestima.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    * {margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif;}
-    body {background:#f4f4f9; color:#333;}
-    a {text-decoration:none;}
-    
-    /* CONTAINER CENTRAL */
-    .container {
-      max-width: 900px;
-      margin: 50px auto;
-      background: #fff;
-      padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-      text-align: center;
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;}
+    body {background: linear-gradient(135deg, #ff9966, #ff5e99); color: #333; line-height: 1.6;}
+    header {text-align: center; color: white; padding: 60px 20px;}
+    header h1 {font-size: 2.5rem; margin-bottom: 10px;}
+    header p {font-size: 1.1rem; max-width: 600px; margin: 0 auto;}
+    .container {max-width: 1100px; margin: 40px auto; padding: 20px; background: #fff; border-radius: 15px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);}
+    .video {text-align: center; margin-bottom: 40px;}
+    .benefits {display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 40px;}
+    .benefit {background: linear-gradient(135deg, #ff9966, #ff5e99); color: white; padding: 25px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);}
+    .benefit h3 {margin-bottom: 10px;}
+    .before-after {display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; margin-top: 40px;}
+    .before-after img {width: 280px; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.2);}
+    .cta {text-align: center; margin-top: 40px;}
+    .cta a {background: linear-gradient(135deg, #ff9966, #ff5e99); color: white; padding: 18px 50px; border-radius: 8px; font-size: 1.1rem; text-decoration: none; font-weight: 600; transition: opacity 0.3s;}
+    .cta a:hover {opacity: 0.85;}
+    footer {text-align: center; background: #ff5e99; color: white; padding: 30px 10px; margin-top: 60px;}
+    /* Botón flotante (móvil) */
+    .floating-btn {
+      position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%);
+      background: linear-gradient(135deg, #ff9966, #ff5e99);
+      color: white; padding: 15px 40px; border-radius: 50px;
+      font-size: 1rem; font-weight: 600; text-decoration: none;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      z-index: 999; display: none;
     }
-
-    h1 {font-size: 2.8em; margin-bottom: 15px; color: #2c3e50;}
-    p.subtitle {font-size: 1.2em; margin-bottom: 30px; color: #555;}
-    
-    .btn-comprar {
-      display: inline-block;
-      background: #e74c3c;
-      color: #fff;
-      font-size: 1.5em;
-      padding: 15px 40px;
-      border-radius: 50px;
-      transition: background 0.3s;
-      margin: 20px 0;
-    }
-    .btn-comprar:hover {background: #c0392b;}
-
-    .imagem-produto {
-      width: 100%;
-      max-width: 400px;
-      margin: 30px auto;
-      border-radius: 10px;
-    }
-
-    .section {margin: 50px 0; text-align: left;}
-    .section h2 {color: #2c3e50; margin-bottom: 15px;}
-    .section p {font-size: 1em; line-height: 1.6; color: #555; margin-bottom: 10px;}
-
-    /* DEPOIMENTOS */
-    .depoimentos {display: flex; flex-direction: column; gap: 20px;}
-    .depoimento {background:#f9f9f9; padding:20px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.05);}
-    .depoimento p {font-style: italic; color: #555;}
-    .depoimento span {display:block; margin-top:10px; font-weight:bold; color: #2c3e50;}
-
-    /* GARANTIA E BÔNUS */
-    .highlight {background: #fef3e0; padding:20px; border-left:5px solid #e67e22; border-radius:5px; margin-bottom:20px;}
-    
-    @media(max-width:800px){.depoimentos{flex-direction:column;}}
-    @media(max-width:600px){
-      .container {padding: 20px;}
-      h1 {font-size:2.2em;}
-      .btn-comprar {font-size:1.2em; padding:12px 30px;}
+    @media (max-width: 768px) {
+      .floating-btn {display: inline-block;}
     }
   </style>
 </head>
 <body>
 
+  <header>
+    <h1>Protocolo Ciero Vientre</h1>
+    <p>Transforma tu abdomen y recupera tu confianza con un método natural y comprobado.</p>
+  </header>
+
   <div class="container">
-    <h1>Protocolo Ciero Ventre</h1>
-    <p class="subtitle">Transforme sua barriga e sua autoestima em apenas 21 dias com um método 100% natural e comprovado!</p>
-
-    <img src="https://via.placeholder.com/400x300?text=Antes+e+Depois" alt="Antes e Depois" class="imagem-produto">
-
-    <a href="https://pay.hotmart.com/X102804891T?off=27ogaj6g&checkoutMode=10" target="_blank" class="btn-comprar">Quero Começar Agora</a>
-
-    <div class="section">
-      <h2>O que você vai conquistar:</h2>
-      <p>✅ Redução de medidas da barriga em até 21 dias.</p>
-      <p>✅ Mais energia, disposição e confiança.</p>
-      <p>✅ Método natural, sem remédios ou cirurgias.</p>
+    <div class="video">
+      <!-- 🎬 VIDEO VTURB -->
+      <vturb-smartplayer id="vid-690e2f041a078823fdadef1c" style="display: block; margin: 0 auto; width: 100%; max-width: 600px;"></vturb-smartplayer>
+      <script type="text/javascript">
+        var s=document.createElement("script");
+        s.src="https://scripts.converteai.net/b54b1210-b65c-436b-ae22-a4d4fda71a39/players/690e2f041a078823fdadef1c/v4/player.js";
+        s.async=!0;document.head.appendChild(s);
+      </script>
     </div>
 
-    <div class="section">
-      <h2>Como funciona:</h2>
-      <p>Você receberá um passo a passo diário com técnicas simples de alimentação e exercícios, adaptados para qualquer rotina. Basta seguir e ver os resultados!</p>
-    </div>
+    <section>
+      <h2 style="text-align:center; color:#ff5e99; font-size:1.8rem;">🌿 ¿Qué es el Protocolo Ciero Vientre?</h2>
+      <p style="text-align:center; margin-top:15px;">Un programa revolucionario que combina alimentación inteligente, rutinas simples y técnicas naturales para reducir grasa abdominal y mejorar tu bienestar general.</p>
+    </section>
 
-    <div class="section highlight">
-      <h2>Garantia de Satisfação:</h2>
-      <p>Se você seguir o método e não ficar satisfeito, oferecemos uma **garantia de 7 dias** para devolução do seu investimento. Sem complicações!</p>
-    </div>
-
-    <div class="section highlight">
-      <h2>Bônus Exclusivos:</h2>
-      <p>🎁 Guia de receitas saudáveis para acelerar os resultados</p>
-      <p>🎁 Dicas de exercícios rápidos para qualquer rotina</p>
-    </div>
-
-    <div class="section">
-      <h2>Depoimentos de quem já transformou a vida:</h2>
-      <div class="depoimentos">
-        <div class="depoimento">
-          <p>"Seguindo o Protocolo Ciero Ventre perdi 4kg em 3 semanas! Me sinto mais confiante e saudável."</p>
-          <span>- Ana M.</span>
-        </div>
-        <div class="depoimento">
-          <p>"O método é simples, prático e funciona. Recomendo para todas que querem resultados reais."</p>
-          <span>- Carla S.</span>
-        </div>
-        <div class="depoimento">
-          <p>"Nunca achei que seria tão fácil transformar meu corpo. Estou amando os resultados!"</p>
-          <span>- Juliana R.</span>
-        </div>
+    <section class="benefits">
+      <div class="benefit">
+        <h3>🔥 Elimina la grasa abdominal</h3>
+        <p>Reduce centímetros de cintura con un enfoque saludable y efectivo.</p>
       </div>
-    </div>
+      <div class="benefit">
+        <h3>💆‍♀️ Mejora tu bienestar</h3>
+        <p>Restaura el equilibrio entre cuerpo y mente, aliviando el estrés.</p>
+      </div>
+      <div class="benefit">
+        <h3>🥗 Alimentación consciente</h3>
+        <p>Descubre cómo nutrir tu cuerpo con alimentos que aceleran tu metabolismo.</p>
+      </div>
+    </section>
 
-    <div class="section">
-      <h2>Garanta já sua vaga:</h2>
-      <p>Clique no botão abaixo e faça parte do Protocolo Ciero Ventre hoje mesmo. Vagas limitadas!</p>
-      <a href="https://pay.hotmart.com/X102804891T?off=27ogaj6g&checkoutMode=10" target="_blank" class="btn-comprar">Quero Começar Agora</a>
-    </div>
+    <section class="before-after">
+      <img src="https://i.imgur.com/fX5Qhbd.jpg" alt="Antes - mujer con sobrepeso">
+      <img src="https://i.imgur.com/FpGvhXe.jpg" alt="Después - mujer con vientre plano">
+    </section>
 
+    <div class="cta">
+      <a href="https://pay.hotmart.com/X102804891T?off=27ogaj6g&checkoutMode=10" target="_blank">
+        👉 QUIERO MI NUEVO CUERPO AHORA
+      </a>
+    </div>
   </div>
+
+  <!-- Botón flotante en móvil -->
+  <a href="https://pay.hotmart.com/X102804891T?off=27ogaj6g&checkoutMode=10" target="_blank" class="floating-btn">
+    💥 OBTÉN ACCESO AHORA
+  </a>
+
+  <footer>
+    <p>© 2025 Protocolo Ciero Vientre | Todos los derechos reservados</p>
+  </footer>
 
 </body>
 </html>
