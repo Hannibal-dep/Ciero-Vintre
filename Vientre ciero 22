@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protocolo Ciero Vientre</title>
+
+  <!-- Ícone / Logo -->
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/2966/2966327.png">
+
+  <!-- Estilo -->
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #ff8a80, #ffb199);
+      margin: 0;
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 15px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      position: relative;
+      z-index: 1000;
+    }
+
+    header img {
+      width: 40px;
+      height: 40px;
+    }
+
+    h1 {
+      color: #ff4d6d;
+      font-size: 1.8rem;
+      margin: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 100;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .video-wrap {
+      margin: 20px auto;
+      max-width: 960px;
+      background: white;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .cta {
+      background: #ff4d6d;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 1.2rem;
+      display: inline-block;
+      margin: 20px 0;
+      transition: background 0.3s;
+      font-weight: bold;
+    }
+
+    .cta:hover {
+      background: #ff0055;
+      transform: translateY(-2px);
+    }
+
+    .testimonials {
+      background: #fff;
+      margin: 40px auto;
+      padding: 40px 20px;
+      max-width: 900px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+
+    .testimonials h2 {
+      color: #ff4d6d;
+      margin-bottom: 25px;
+    }
+
+    .testimonial {
+      margin-bottom: 20px;
+      font-style: italic;
+      padding: 15px;
+      background: #f8f9fa;
+      border-radius: 10px;
+      border-left: 4px solid #ff4d6d;
+    }
+
+    footer {
+      background: white;
+      padding: 15px;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 40px;
+    }
+
+    .floating-buy {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #ff4d6d;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      animation: pulse 1.5s infinite;
+      z-index: 9999;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 1.4rem; }
+      .cta { font-size: 1rem; padding: 12px 20px; }
+      .floating-buy {
+        bottom: 10px;
+        right: 10px;
+        left: 10px;
+        text-align: center;
+      }
+    }
+  </style>
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1752998905374672');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1752998905374672&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img src="https://cdn-icons-png.flaticon.com/512/2966/2966327.png" alt="Logo">
+      <h1>Protocolo Ciero Vientre</h1>
+    </header>
+
+    <div class="video-wrap">
+      <h2 style="color: #ff4d6d; margin-bottom: 15px;">🎥 Descubre el Protocolo que está Cambiando Vidas</h2>
+      <vturb-smartplayer id="vid-690e2f041a078823fdadef1c"></vturb-smartplayer>
+    </div>
+
+    <a class="cta" href="https://pay.hotmart.com/X102804891T?off=27ogaj6g&checkoutMode=10" onclick="fbq('track','InitiateCheckout');">
+      🔥 QUIERO OBTENER MI ACCESO AHORA
+    </a>
+
+    <section class="testimonials">
+      <h2>💬 Testimonios Reales</h2>
+      <div class="testimonial">
+        "Llevaba años intentando bajar el vientre y con este protocolo vi resultados en menos de 3 semanas." 
+        <br><b>— María G.</b>
+      </div>
+      <div class="testimonial">
+        "Me siento con más energía y mi ropa me queda mejor. ¡Vale totalmente la pena!" 
+        <br><b>— Laura P.</b>
+      </div>
+      <div class="testimonial">
+        "Nunca imaginé que algo tan simple pudiera cambiar tanto mi cuerpo." 
+        <br><b>— Rosa L.</b>
+      </div>
+      <div class="testimonial">
+        "Probé muchas dietas, pero solo con el Protocolo Ciero Vientre vi resultados duraderos." 
+        <br><b>— Camila F.</b>
+      </div>
+    </section>
+
+    <a class="cta" href="https://pay.hotmart.com/X102804891T?off=27ogaj6g&checkoutMode=10" onclick="fbq('track','InitiateCheckout');">
+      💥 OBTÉN ACCESO AHORA - TRANSFORMACIÓN GARANTIZADA
+    </a>
+  </div>
+
+  <a class="floating-buy" href="https://pay.hotmart.com/X102804891T?off=27ogaj6g&checkoutMode=10" onclick="fbq('track','InitiateCheckout');">
+    💥 COMPRAR AHORA
+  </a>
+
+  <footer>
+    © 2025 Protocolo Ciero Vientre — Todos los derechos reservados
+  </footer>
+
+  <!-- Script do Vturb - COLOCADO NO FINAL para não bloquear a página -->
+  <script type="text/javascript">
+    var s = document.createElement("script");
+    s.src = "https://scripts.converteai.net/b54b1210-b65c-436b-ae22-a4d4fda71a39/players/690e2f041a078823fdadef1c/v4/player.js";
+    s.async = true;
+    document.body.appendChild(s);
+  </script>
+
+  <!-- Eventos do Facebook Pixel -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      
+      // Rastrear visualização de conteúdo após 30 segundos
+      setTimeout(function() {
+        fbq('track', 'ViewContent', {
+          content_name: 'Protocolo Ciero Vientre',
+          content_category: 'Video'
+        });
+      }, 30000);
+
+      // Rastrear leads quando usuário rola a página
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 500) {
+          fbq('track', 'Lead');
+        }
+      });
+
+    });
+  </script>
+</body>
+</html>
