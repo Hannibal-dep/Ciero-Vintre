@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protocolo Ciero Vientre</title>
+  
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1752998905374672');
+    fbq('track', 'PageView');
+  </script>
+</head>
+
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif;">
+  
+  <!-- CONTEÚDO ACIMA DO VÍDEO -->
+  <div style="background: white; padding: 20px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+    <h1 style="color: #ff4d6d; margin: 0;">🔥 Protocolo Ciero Vientre</h1>
+    <p style="color: #666; margin: 10px 0;">Descubre el secreto para un vientre plano en tiempo récord</p>
+  </div>
+
+  <!-- VÍDEO VTURB -->
+  <div id="video-container">
+    <vturb-smartplayer id="vid-690e2f041a078823fdadef1c"></vturb-smartplayer>
+  </div>
+
+  <!-- CONTEÚDO ABAIXO DO VÍDEO -->
+  <div style="padding: 20px; text-align: center; background: linear-gradient(135deg, #ff8a80, #ffb199);">
+    
+    <a href="https://pay.hotmart.com/X102804891T?off=27ogaj6g&checkoutMode=10" 
+       onclick="fbq('track','InitiateCheckout');"
+       style="background: #ff4d6d; color: white; padding: 15px 30px; border-radius: 10px; text-decoration: none; font-size: 1.2rem; display: inline-block; margin: 20px 0; font-weight: bold;">
+       🔥 QUIERO OBTENER MI ACCESO AHORA
+    </a>
+
+    <div style="background: white; padding: 30px; margin: 20px auto; max-width: 800px; border-radius: 15px;">
+      <h2 style="color: #ff4d6d;">💬 Testimonios Reales</h2>
+      
+      <div style="background: #f8f9fa; padding: 15px; margin: 15px 0; border-radius: 10px; border-left: 4px solid #ff4d6d;">
+        "Llevaba años intentando bajar el vientre y con este protocolo vi resultados en menos de 3 semanas." 
+        <br><b>— María G.</b>
+      </div>
+      
+      <div style="background: #f8f9fa; padding: 15px; margin: 15px 0; border-radius: 10px; border-left: 4px solid #ff4d6d;">
+        "Me siento con más energía y mi ropa me queda mejor. ¡Vale totalmente la pena!" 
+        <br><b>— Laura P.</b>
+      </div>
+
+      <a href="https://pay.hotmart.com/X102804891T?off=27ogaj6g&checkoutMode=10" 
+         onclick="fbq('track','InitiateCheckout');"
+         style="background: #ff4d6d; color: white; padding: 15px 30px; border-radius: 10px; text-decoration: none; font-size: 1.1rem; display: inline-block; margin: 20px 0; font-weight: bold;">
+         💥 OBTÉN ACCESO AHORA
+      </a>
+    </div>
+  </div>
+
+  <!-- BOTÃO FLUTUANTE -->
+  <a href="https://pay.hotmart.com/X102804891T?off=27ogaj6g&checkoutMode=10" 
+     onclick="fbq('track','InitiateCheckout');"
+     style="position: fixed; bottom: 20px; right: 20px; background: #ff4d6d; color: white; padding: 15px 25px; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 5px 15px rgba(0,0,0,0.3); z-index: 10000;">
+     💥 COMPRAR
+  </a>
+
+  <!-- RODAPÉ -->
+  <footer style="background: white; padding: 15px; text-align: center; color: #777;">
+    © 2025 Protocolo Ciero Vientre — Todos los derechos reservados
+  </footer>
+
+  <!-- SCRIPT VTURB - CARREGADO POR ÚLTIMO -->
+  <script>
+    // Aguardar a página carregar completamente
+    window.addEventListener('load', function() {
+      var s = document.createElement("script");
+      s.src = "https://scripts.converteai.net/b54b1210-b65c-436b-ae22-a4d4fda71a39/players/690e2f041a078823fdadef1c/v4/player.js";
+      s.async = true;
+      document.body.appendChild(s);
+      
+      // Forçar redimensionamento após carregar o vídeo
+      setTimeout(function() {
+        var videoElement = document.querySelector('vturb-smartplayer');
+        if (videoElement) {
+          videoElement.style.width = '100%';
+          videoElement.style.maxWidth = '960px';
+          videoElement.style.margin = '0 auto';
+          videoElement.style.display = 'block';
+        }
+      }, 2000);
+    });
+  </script>
+
+</body>
+</html>
