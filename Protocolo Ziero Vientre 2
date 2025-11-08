@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protocolo Ciero Vientre</title>
+  
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1752998905374672');
+    fbq('track', 'PageView');
+  </script>
+  
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #ff8a80, #ffb199);
+    }
+    
+    .header {
+      background: white;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .header h1 {
+      color: #ff4d6d;
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    
+    .video-container {
+      background: white;
+      margin: 20px;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+    
+    .hidden-content {
+      display: none;
+      background: white;
+      margin: 20px;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    }
+    
+    .cta-button {
+      background: #ff4d6d;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      display: inline-block;
+      margin: 10px 0;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .testimonial {
+      background: #f8f9fa;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 10px;
+      border-left: 4px solid #ff4d6d;
+    }
+    
+    .floating-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #ff4d6d;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      z-index: 10000;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- CABEÇALHO -->
+  <div class="header">
+    <h1>🔥 Protocolo Ciero Vientre</h1>
+  </div>
+
+  <!-- VÍDEO VTURB -->
+  <div class="video-container">
+    <vturb-smartplayer id="vid-690e2f041a078823fdadef1c"></vturb-smartplayer>
+  </div>
+
+  <!-- CONTEÚDO QUE O VTURB TENTA ESCONDER - VAMOS MOSTRAR COM JAVASCRIPT -->
+  <div id="mainContent" class="hidden-content">
+    <h2 style="color: #ff4d6d; text-align: center;">¡Tu Transformación Espera!</h2>
+    
+    <a href="https://pay.hotmart.com/X102804891T?off=27ogaj6g&checkoutMode=10" 
+       class="cta-button" 
+       onclick="fbq('track','InitiateCheckout');">
+       🔥 QUIERO OBTENER MI ACCESO AHORA
+    </a>
+
+    <div style="margin-top: 30px;">
+      <h3 style="color: #ff4d6d;">💬 Testimonios Reales</h3>
+      
+      <div class="testimonial">
+        "Llevaba años intentando bajar el vientre y con este protocolo vi resultados en menos de 3 semanas." 
+        <br><b>— María G.</b>
+      </div>
+      
+      <div class="testimonial">
+        "Me siento con más energía y mi ropa me queda mejor. ¡Vale totalmente la pena!" 
+        <br><b>— Laura P.</b>
+      </div>
+      
+      <div class="testimonial">
+        "Nunca imaginé que algo tan simple pudiera cambiar tanto mi cuerpo." 
+        <br><b>— Rosa L.</b>
+      </div>
+
+      <a href="https://pay.hotmart.com/X102804891T?off=27ogaj6g&checkoutMode=10" 
+         class="cta-button"
+         onclick="fbq('track','InitiateCheckout');">
+         💥 OBTÉN ACCESO AHORA
+      </a>
+    </div>
+  </div>
+
+  <!-- BOTÃO FLUTUANTE -->
+  <a href="https://pay.hotmart.com/X102804891T?off=27ogaj6g&checkoutMode=10" 
+     class="floating-button"
+     onclick="fbq('track','Purchase');">
+     💥 COMPRAR
+  </a>
+
+  <!-- RODAPÉ -->
+  <footer style="background: white; padding: 15px; text-align: center; color: #777;">
+    © 2025 Protocolo Ciero Vientre — Todos los derechos reservados
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script>
+    // Script do Vturb
+    var s = document.createElement("script");
+    s.src = "https://scripts.converteai.net/b54b1210-b65c-436b-ae22-a4d4fda71a39/players/690e2f041a078823fdadef1c/v4/player.js";
+    s.async = true;
+    document.body.appendChild(s);
+
+    // Mostrar conteúdo após o vídeo carregar
+    setTimeout(function() {
+      document.getElementById('mainContent').style.display = 'block';
+      
+      // Forçar mostrar conteúdo mesmo se o Vturb tentar esconder
+      setInterval(function() {
+        var content = document.getElementById('mainContent');
+        if (content.style.display === 'none') {
+          content.style.display = 'block';
+        }
+      }, 1000);
+      
+    }, 5000); // Mostrar após 5 segundos
+
+    // Eventos do Facebook Pixel
+    document.addEventListener('DOMContentLoaded', function() {
+      setTimeout(function() {
+        fbq('track', 'ViewContent', {
+          content_name: 'Protocolo Ciero Vientre',
+          content_category: 'Video'
+        });
+      }, 30000);
+    });
+  </script>
+</body>
+</html>
